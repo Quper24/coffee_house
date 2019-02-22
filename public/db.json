@@ -80,6 +80,16 @@
             "name": "Pour Over Coffee Maker",
             "url": "https://images-na.ssl-images-amazon.com/images/I/916TPwGqfML._SL1500_.jpg",
             "price": "45.99$"
+        },
+        {
+            "name": "Baratza Encore Conical Burr Coffee Grinder",
+            "url": "https://images-na.ssl-images-amazon.com/images/I/61PvfV7ScCL._SY679_.jpg",
+            "price": "139.00$"
+        },
+        {
+            "name": "Coffee Grinder Cleaning Brush",
+            "url": "https://images-na.ssl-images-amazon.com/images/I/31hEd9CrYjL.jpg",
+            "price": "7.89$"
         }
     ]
 }

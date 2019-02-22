@@ -1,28 +1,31 @@
 import React from 'react';
-import {Col, Row, Container} from 'reactstrap';
-import './header.css';
+import {Row} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import Logo from '../../logo/Logo.svg';
+
 
 const Header = () => {
     return (
-        <Container>
-            <Row>
-                <Col className="col-lg-6">
-                    <ul className="header">
-                        <li className="header__item">
-                            <Link to='/'><img src="./img/Logo.png" alt="logo" /></Link>
-                        </li>
-                        <li className="header__item">
-                            <Link to='/ourcoffee'>Our coffee</Link>
-                        </li>
-                        <li className="header__item">
-                            <Link to='/yourpleasure'>For your pleasure</Link>
-                        </li>
-                    </ul>
-                </Col>
-            </Row>
-        </Container>
-    )
-}
+        <Row>
+            <div className="col-lg-6">
+                <header>
+                        <ul className="header">
+                            <li className="header__item">
+                                <Link to='/'>
+                                    <img src={Logo} alt="logo"/>
+                                </Link>
+                            </li>
+                            <li className="header__item">
+                                <Link to='/coffee/'>Our coffee</Link>
+                            </li>
+                            <li className="header__item">
+                                <Link to='/pleasure/'>For your pleasure</Link>
+                            </li>
+                        </ul>
+                    </header>
+            </div>
+        </Row>
+    );
+};
 
 export default Header;

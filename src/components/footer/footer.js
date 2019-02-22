@@ -1,7 +1,9 @@
 import React from 'react';
-import {Col, Row, Container} from 'reactstrap';
-import './footer.css';
+import {Container, Row} from 'reactstrap';
 import {Link} from 'react-router-dom';
+
+import LogoBlack from '../../logo/Logo_black.svg';
+import BeansLogoDark from '../../logo/Beans_logo_dark.svg';
 
 
 const Footer = () => {
@@ -9,28 +11,26 @@ const Footer = () => {
         <footer>
             <Container>
                 <Row>
-                    <Col className="col-lg-5 offset-lg-4">
+                    <div className="col-lg-5 offset-lg-4">
                         <ul className="footer">
                             <li className="footer__item">
-                                <Link to='/'><img src="./img/LogoBlack.png" alt="logo" /></Link>
+                                <Link to='/'>
+                                        <img src={LogoBlack} alt="logo"/>
+                                </Link>
                             </li>
                             <li className="footer__item">
-                                <Link to='/ourcoffee'>Our coffee</Link>
+                                <Link to='/coffee/'>Our coffee</Link>
                             </li>
                             <li className="footer__item">
-                                <Link to='/yourpleasure'>For your pleasure</Link>
+                                <Link to='/pleasure/'>For your pleasure</Link>
                             </li>
                         </ul>
-                    </Col>
+                    </div>
                 </Row>
-                <Row>
-                    <Col>
-                        <img className="beanslogo" src="./img/Beans.png"/>
-                    </Col>
-                </Row>
+                <img className="beanslogo" src={BeansLogoDark} alt="Beans logo"/>
             </Container>
-        </footer>        
-    )
-}
+        </footer>
+    );
+};
 
 export default Footer;

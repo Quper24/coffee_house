@@ -1,9 +1,0 @@
-.banner {
-    height: 260px;
-    background: url(./Coffee_bg.jpg) center center no-repeat;
-    background-size: cover
-}
-
-.banner .title-big {
-    margin-top: 60px
-}
